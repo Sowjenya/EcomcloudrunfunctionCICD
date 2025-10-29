@@ -1,0 +1,23 @@
+# git status
+# git branch
+# git checkout -b dev -- creating a new branch caleld dev
+
+# git add. # to add it all the changes in local branch
+# git commit -m "Code setup in dev branch for cloud run function with CICD"
+# git push origin dev
+# 1️⃣ Switch to main
+git checkout main
+
+# 2️⃣ Merge changes from dev
+git merge dev
+
+# 3️⃣ Push to remote main
+git push origin main
+
+git checkout main
+git pull origin main --rebase
+git push origin main
+
+git config user.name "Sowjenya" 
+git config user.email "sowjenya2000@gmail.com" 
+git pull origin dev --rebase
